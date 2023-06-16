@@ -1,0 +1,82 @@
+{
+  
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-9155008277126927/7669993848",
+    "ios_app_id": "ca-app-pub-xxxxxxxx~xxxxxxxx"
+  },
+  "expo": {
+    "scheme": "thetidbit",
+    "name": "thetidbit",
+    "slug": "mobileapp-thetidbit",
+    "version": "3.0.59",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon-noti-rohit.png",
+          "color": "#ffffff"
+        }
+      ],
+      [
+        "expo-ads-admob",
+        {
+          "userTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.mobileappthetidbit",
+      "userInterfaceStyle": "dark",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "thetidbit.in",
+              "pathPrefix": "/"
+            },
+            {
+              "scheme": "thetidbit"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "versionCode": 62,
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-9155008277126927~8333991217"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+    
+  }
+}
